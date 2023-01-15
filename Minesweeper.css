@@ -48,11 +48,3 @@ BODY {
     margin: 1.5em auto 0 auto;
     display: block;
   }
-
-  .disablegrid {
-    pointer-events: none;
-    opacity: 0.4;
-  }
-  .wrapper {
-    cursor: not-allowed;
-  }
