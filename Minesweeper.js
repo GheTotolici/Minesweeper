@@ -21,14 +21,14 @@ document.getElementById("hard").addEventListener("click", function() {
 function setDifficulty(difficulty) {
   // Change the game's difficulty based on the input
   if (difficulty == "easy"){
-     gridSize = 10;
-     bombs = 20;
+    gridSize = 10;
+    bombs = 20;
   } else if(difficulty == "medium"){
-     gridSize = 20;
-     bombs = 60;
+    gridSize = 20;
+    bombs = 60;
   } else if(difficulty == "hard"){
-     gridSize = 30;
-     bombs = 120;
+    gridSize = 30;
+    bombs = 120;
   }
   generateGrid();
   timer = setInterval(function(){
