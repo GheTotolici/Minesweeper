@@ -1,6 +1,5 @@
 let grid = document.getElementById("grid");
 let displayMsg = document.getElementById("message");
-let testMode = false; //If I turn this variable to true then I can see where the mines are
 let minesSymbol = "\uD83D\uDCA3";
 let flagSymbol = "&#x1F6A9;";
 let bombs = 0;
@@ -68,9 +67,6 @@ function addMines() {
     let col = Math.floor(Math.random() * gridSize);
     let cell = grid.rows[row].cells[col];
     cell.setAttribute("data-mine","true");
-    if (testMode) { 
-      cell.innerHTML = minesSymbol;
-    }
   }
 }
 
